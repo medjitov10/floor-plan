@@ -1,0 +1,149 @@
+// Place all the styles related to the Icons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.floor_plan_icon_select {
+  outline: none;
+  margin: 5px 10%;
+  width: 80%;
+  padding-left: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('https://d30y9cdsu7xlg0.cloudfront.net/png/10897-200.png') 96% / 13% no-repeat #eee;
+}
+
+
+.top-left {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5px 10%;
+}
+
+.top-left input {
+  outline: none;
+  font-size: 16px;
+  width: 30%;
+  height: 30px;
+}
+
+.top-left span {
+  margin-top: 5px;
+  color: #fff;
+  text-shadow: 3px 4px 5px #000;
+  text-shadow: inset 3px 4px 5px #000;
+}
+
+.icon-angle {
+  width: 80%;
+  margin: 0 10% 5px 10%;
+}
+
+.icon-angle div {
+  display: flex;
+  float: right;
+  margin: 0 10% 5px 0;
+}
+
+.icon-angle input {
+  background: white;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  height: 3px;
+  outline: none;
+}
+
+.plan-item-detail-main label {
+  color: #fff;
+  text-shadow: 3px 4px 5px #000;
+  margin: -2px 10%;
+}
+
+.submit-and-device {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.submit-and-device button {
+  width: 20px;
+  height: 20px;
+  padding:0;
+  margin-left: 5px;
+}
+
+.submit-and-device div span {
+  color: #81d7f3;
+  font-size: 16px;
+}
+
+.device-detail-index {
+  position: absolute;
+  overflow-y: scroll;
+  width: 550px;
+  height: 250px;
+  top: 264px;
+  background: white;
+  border: 1px solid #000;
+}
+
+.device-detail-tab {
+  display: flex;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 5%;
+}
+
+.device-detail-tab div {
+  background: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: auto;
+  height: 20px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.device-detail-index div span {
+  font-size: 10px;
+}
+.device-detail-window {
+  margin-top: 3px;
+  width: 90%;
+  margin-left: 5%;
+  border-top: none;
+  background: white;
+}
+
+.device-list-tr td {
+  vertical-align: middle!important;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #222;
+  height: 17px;
+  width: 9px;
+  border-radius: 3px;
+  background: rgb(102, 187, 106);
+  cursor: pointer;
+}
+#radius-range::-webkit-slider-thumb {
+background: rgb(239, 83, 80);
+}
+.device-detail-detail-img {
+  float:left;
+  width: 50%;
+  height: 200px;
+  padding: 5px;
+}
+
+.close-detail-floor-plan {
+  color: #fff;
+  margin-right: 20px;
+  float: right;
+  font-weight: normal;
+  font-size: 16px!important;
+  cursor: pointer;
+}

@@ -1,0 +1,269 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require font-awesome
+ *= require_all
+ *= require_tree .
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px!important;
+  box-sizing: border-box!important;
+}
+
+ #lgn-btn, #login-btn, #logout-btn {
+ color: #ddd !important;
+ }
+ #lgn-btn:hover, #lgn-btn:focus, #lgn-btn:active, #lgn-btn:visited {
+ outline: none !important;
+ background-color:transparent!important;
+ color: #fff !important;
+ }
+
+ #login-btn:hover, #logout-btn:hover {
+ background-color:transparent;
+   color: #fff !important;
+ }
+ .form-control, .btn-default {
+ border-radius: 0;
+ }
+ /*DropDown menu*/
+ #menu1:hover {
+ cursor: pointer;
+ }
+ .dropdown-menu {
+ background-color:#0d0d0d;
+ opacity: 0.9;
+ border-radius: 0;
+ font-size:0.9em;
+ }
+ .dropdown-menu li a:hover {
+ color: #fff;
+ }
+
+ #mainservice {
+ color:#ddd;
+ }
+
+ .dropdown-menu li a {
+ color: #ddd;
+ }
+
+ .dropdown-menu li a:hover {
+ color: #fff !important;
+ }
+ /*End of Navbar Style*/
+
+
+ /*Footer Style */
+
+ .footer {
+ background:#0d0d0d;
+ height: auto;
+ padding-bottom: 30px;
+ position: relative;
+ width: 100%;
+ min-height: 250px;
+ border-bottom: 1px solid #787878;
+ // border-top: 4px solid #fcab0e;
+ }
+ .footer p {
+ margin: 0;
+ font-family: 'Lato', sans-serif;
+ }
+ .footer img {
+ max-width: 100%;
+ }
+ .footer h3 {
+ font-family: 'DinNext', sans-serif;
+ border-bottom: 1px solid #787878;
+ color: #ddd;
+ font-size: 14px;
+ line-height: 14px;
+ padding: 40px 0 10px;
+ text-transform: uppercase;
+ }
+ .footer ul {
+ font-family: 'Lato', sans-serif;
+ font-size: 13px;
+ list-style-type: none;
+ margin-left: 0;
+ padding-left: 0;
+ margin-top: 15px;
+ color: #ddd;
+ }
+ .footer ul li a {
+ font-family: 'Lato', sans-serif;
+ padding: 0 0 5px 0;
+ display: block;
+ cursor: pointer;
+ }
+ .footer ul li a:hover, .footer ul li a:visited {
+ color: #ddd;
+ text-decoration: underline;
+ }
+ .footer a {
+ color: #ddd !important;
+ font-size: 13px;
+ }
+ .footer a:hover {
+ background-color:transparent !important;
+ color: #fff!important;
+ text-decoration: none !important;
+ }
+ #social:hover {
+ -webkit-transform:scale(1.1);
+ -moz-transform:scale(1.1);
+ -o-transform:scale(1.1);
+     }
+ #social:hover, #social:focus, #social:active, #social:visited {
+ background-color:transparent!important;
+ }
+ #social {
+ -webkit-transform:scale(0.8);
+ -moz-transform:scale(0.8);
+ -o-transform:scale(0.8);
+ -webkit-transition-duration: 0.5s;
+ -moz-transition-duration: 0.5s;
+ -o-transition-duration: 0.5s;
+  color:#bfbfbf;
+ }
+ .social-fb {
+ color: #3B5998 !important;
+ }
+ .social-tw {
+ color: #4099FF !important;
+ }
+ .social-ins {
+ font-size: 72px;
+ background: -webkit-linear-gradient(#400080, transparent),
+ -webkit-linear-gradient( 200deg, #d047d1, #ff0000, #ffff00);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+ .social-li {
+ color: #0077B5 !important;
+ }
+ .nomargin a:visited, .nomargin a:active, .nomargin a:focus {
+ background: transparent !important;
+ color: none;
+ }
+ .nomargin {
+ margin:0px;
+ margin-top: 0px!important;
+ padding:0px;
+ }
+ /*End of Footer Style*/
+
+
+ #notice {
+ color:#fff !important;
+ }
+
+ .signature_pad {
+ width: 100%;
+ min-height: 50%;
+ margin: 0 auto;
+ }
+
+ .signature_pad_body canvas {
+ width: 100%;
+ height: 100%;
+ border: 1px solid #ccc;
+ background: #eeeeee;
+ box-shadow: inset 0 1px 3px rgba(0,0,0,.13);
+ }
+ /*Footer bottom Style */
+
+ .footer-bottom p {
+ margin-top: 15px;
+ margin-bottom: 15px;
+ }
+ .footer-bottom p.pull-left {
+ padding-top: 6px;
+ }
+ .footer-bottom a {
+ color: #ddd;
+ }
+ .footer-bottom a:hover {
+ color:#fff;
+ }
+ .footer-bottom {
+ position:relative;
+ background: #0d0d0d;
+ color: #ddd;
+ border-top: 1px solid #000;
+ }
+ .payments {
+ font-size: 1.5em;
+ }
+ .contact_detail {
+ color: #ddd;
+ font-size: 13px;
+ margin-bottom: 5px!important;
+ font-family: 'Lato', sans-serif;
+ }
+ .contact_detail span {
+ color:#ddd;
+ }
+ /*End of Footer bottom Style*/
+
+ /*Table Sorting*/
+
+ .btn.btn-custom4 {
+   color: #333;
+   font-weight: bold;
+   background-color: #f5f5f5;
+   border: 1px solid #d0d0d0;
+   border-radius: 3px;
+   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+   width: 150px;
+ }
+
+.bg-default {
+  font-family: 'Arial', sans-serif;
+  border-top: 4px solid #29B6F6;
+  font-weight: bold;
+}
+
+ #plan {
+ height: 100%;
+ width: 100%;
+ will-change: transform;
+ }
+
+
+ #plan li {
+ list-style-type: none;
+ }
+ #draggable {
+ position: absolute;
+ top: 50px;
+ left: 50px;
+ width: 16px;
+ height: 16px;
+ }
+
+ .box {
+   border: 2px solid black;
+   width: 100px;
+   height: 100px;
+   background-color: green;
+   margin: 27px;
+   position: relative;
+ }

@@ -1,0 +1,676 @@
+#floor-plan::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  display: block !important;
+}
+
+/* Track */
+
+#floor-plan::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+
+#floor-plan::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+
+#floor-plan::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#floor-plan-react {
+  background: #ebebeb;
+}
+
+.customer-list-main {
+  background: white;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+.table-responsive.no-border {
+  border: none !important;
+}
+
+.icon-btn:hover {
+  box-shadow: none !important;
+}
+
+.favorite-icons {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-bottom: 2px;
+  height: 50px;
+  overflow-x: scroll;
+  width: 50%;
+}
+
+.favorite-icons div div {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: rgb(247, 49, 73);
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.favorite-icons div {
+  width: 60px;
+  height: 50px;
+}
+
+.customer-floor-plan:hover {
+  background: rgba(167, 167, 167, .19) !important;
+  cursor: pointer;
+}
+
+.floor-plans-ui-main {
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.floor-plans-ui-img {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  height: 710px;
+  width: 1200px;
+  padding: 0;
+  list-style: none;
+  margin: auto;
+  position: relative;
+}
+
+.floor-plans-ui-right {
+  z-index: 1;
+  background: white;
+  position: absolute;
+  width: 90px;
+  height: calc(100% - 34px);
+  right: 0;
+}
+
+
+.floor-plans-ui-right span {
+  font-weight: 400!important;
+  font-size: 12px;
+}
+
+.floor-plans-ui-footer {
+  background: #29363d;
+  position: absolute;
+  border-top: 1px solid rgb(41, 54, 61);
+  width: 100%;
+  height: 34px;
+  bottom: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.floor-plan-add-icon {
+  width: 200px;
+  height: 0px;
+  border: none !important;
+}
+
+.floor-plan-add-icon-pop-up {
+  width: 200px;
+  height: 120px;
+}
+
+.floor-plans-add {
+  position: absolute;
+  border: 1px solid;
+  background: rgba(41, 54, 61, 0.8);
+  bottom: 34px;
+  border: 1px solid;
+  transition: .35s;
+  transition-timing-function: linear;
+  margin-bottom: 1px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.floor-plan-footer-category-item {
+  color: white
+}
+
+.floor-plan-footer-category-item:hover {
+  color: black;
+  background: white;
+}
+
+.floor-plans-ui-footer-addType {
+  overflow: scroll;
+  position: absolute;
+  background: rgba(41, 54, 61, 0.8);
+  border: 1px solid;
+  top: -202px;
+  left: 202px;
+  transition: .35s;
+  transition-timing-function: linear;
+  box-sizing: border-box;
+}
+
+.floor-plans-ui-footer-addType-pop-up {
+  max-width: 40%;
+  width: 200px;
+  height: 200px;
+}
+
+.floor_plan-ui-footer-addType-close {
+  width: 0px;
+  height: 200px;
+  border: none !important;
+}
+
+// CSSTRANSITIONGROUP
+.directionLeft-enter {
+  margin-left: 1200px;
+  width: 100%;
+}
+
+.directionLeft-enter.directionLeft-enter-active {
+  margin-left: 0px;
+  width: 100%;
+  transition-timing-function: linear;
+  transition: 0.5s;
+}
+
+.directionLeft-leave {
+  width: 100%;
+  opacity: 1;
+  margin-left: 0px;
+}
+
+.directionLeft-leave.directionLeft-leave-active {
+  width: 100%;
+  margin-left: -1200px;
+  transition-timing-function: linear;
+  transition: 0.8s;
+}
+
+// -----------------------------------------------
+.directionRight-enter {
+  margin-left: -1200px;
+  width: 100%;
+}
+
+.directionRight-enter.directionRight-enter-active {
+  margin-left: 0px;
+  width: 100%;
+  transition-timing-function: linear;
+  transition: 0.5s;
+}
+
+.directionRight-leave {
+  width: 100%;
+  opacity: 1;
+  margin-left: 0px;
+}
+
+.directionRight-leave.directionRight-leave-active {
+  width: 100%;
+  margin-left: 1200px;
+  transition-timing-function: linear;
+  transition: 0.8s;
+}
+
+// -----------------------------------------------
+.customers-enter {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.customers-enter.customers-enter-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.customers-leave {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.customers-leave.customers-leave-active {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+// -----------------------------------------------
+.qty-enter {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.qty-enter.qty-enter-active {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.qty-leave {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.qty-leave.qty-leave-active {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.footer-category-enter {
+  opacity: 0.01;
+  margin-left: -20px;
+}
+
+.footer-category-enter.footer-category-enter-active {
+  margin-left: 0;
+  opacity: 1;
+  transition-timing-function: linear;
+  transition: 100ms;
+}
+
+.footer-category-leave {
+  opacity: 1;
+}
+
+.footer-category-leave.footer-category-leave-active {
+  opacity: 0.01;
+  transition-timing-function: linear;
+}
+
+.floor-plan-description-img {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.floor-plans-links.active {
+  background-color: #fff;
+  color: #333;
+}
+
+.floor-plans-links:first-child {
+  border-left: 1px solid #eee;
+  border-radius: 6px 0 0 6px;
+}
+
+.floor-plans-links:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.floor-plans-links {
+  border: 1px solid #eee;
+  border-left: none;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  flex-grow: 3;
+  text-align: center;
+  background-color: #f2f2f2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  transition: 0.3s background-color ease, 0.3s box-shadow ease;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.floor-plans-links:hover,
+.floor-plans-links:active,
+.floor-plans-links:focus,
+.floor-plans-links:visited {
+  color: #333;
+}
+
+.floor-plan-decription-table {
+  position: absolute;
+  display: flex;
+  right: 0;
+  width: 100%;
+  height: 70%;
+  border: 1px solid black;
+}
+
+.floor-plan-description-name {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid black;
+}
+
+.floor-plan-description-body {
+  height: 100%;
+  width: 80%;
+  float: right;
+}
+
+.floor-plan-description-customer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+
+.floor-plan-description-info {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  border-bottom: .5px solid;
+}
+
+.floor-plan-description-customer-name {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  border-right: .5px solid;
+}
+
+.floor-plan-description-customer-address {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+.floor-plan-description-customer-date {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  border-left: .5px solid;
+  height: 100%;
+}
+
+.floor-plan-description-customer-date:first-child {
+  border-left: none;
+}
+
+.div_progress {
+  max-width: 100%;
+  margin: 0.5em 0 0.2em 0;
+}
+
+.div_progress .bar {
+  height: 1.5em;
+  padding-left: 0.2em;
+  color: white;
+  display: none;
+  border-radius: 4px;
+}
+
+.floor-plan-tr {
+  user-select: none;
+}
+
+.floor-plan-tr td i {
+  float: right;
+  margin-top: 2px;
+}
+
+.filter-floor-plan {
+  border: 0px !important;
+  border-radius: 0px !important;
+  color: black !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  font-family: 'Lato', sans-serif;
+  float: right;
+  padding: 5px 0px 5px 0px;
+  width: 100%;
+  outline: none;
+}
+
+.floor-plan-ui-footer-line-category {
+  position: absolute;
+  width: 200px;
+  height: 0px;
+  bottom: 34px;
+  margin-bottom: 1px;
+  left: 41px;
+  background: rgba(3, 3, 3, 0.8);
+  transition: .35s;
+  transition-timing-function: linear;
+}
+
+.floor-plan-footer-icon {
+  color: white;
+  margin: 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 414px) {
+  .btn.btn-custom4 {
+    width: 145px;
+  }
+}
+
+.fa.fa-spinner {
+  animation: spin 4s linear infinite;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// Place all the styles related to the Technicians controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.filterable .filters input[disabled] {
+  background-color: transparent;
+  font-size: 12px;
+  border: none;
+  cursor: auto;
+  box-shadow: none;
+  padding: 0;
+  height: auto;
+}
+.filterable .filters input[placeholder] {
+	font-size: 12px;
+}
+.filterable .filters input[disabled]::-webkit-input-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]::-moz-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]:-ms-input-placeholder {
+    color: #333;
+}
+.topheading {
+	padding-top: -20px;
+}
+
+.tech_badge {
+  color:#fff;
+}
+
+.tech_badge:hover {
+  color:#fff !important;
+}
+
+// Dashboard
+.bg-default {
+  font-family: 'Arial', sans-serif;
+  border-top: 4px solid #29B6F6;
+  font-weight: bold;
+}
+.bg-green {
+  font-family: 'Arial', sans-serif;
+  border-top: 4px solid #2CA01C;
+  font-weight: bold;
+}
+.table th {
+  padding: 10px !important;
+}
+
+.btn.btn-green,
+.btn.btn-blue,
+.btn.btn-red {
+  color:#fff;
+  border-radius: 2px;
+}
+
+.btn.btn-green {
+  background: #66BB6A;
+}
+.btn.btn-blue {
+  background: #29B6F6;
+}
+.btn.btn-red {
+  background: #ef5350;
+}
+
+.btn.btn-default.no-color {
+  border-radius: 2px !important;
+  color:#ccc;
+}
+.btn.btn-default.no-color:hover,
+.btn.btn-green:hover,
+.btn.btn-blue:hover,
+.btn.btn-red :hover {
+  color: #333;
+}
+
+.page-header.dash {
+  padding-bottom: 9px;
+  margin: 10px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+}
+.page-header.dash h4 {
+  background: #29B6F6;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 2px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.page-header.custs {
+  padding-bottom: 9px;
+  margin: 10px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+}
+.page-header.custs h4 {
+  background: #2CA01C;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 2px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.filter_btn_right {
+  position: absolute;
+  right:10px;
+  top:10px;
+}
+.filter_btn_right > .btn.btn-link.btn-xs.btn-filter {
+  color:#fff;
+  outline: none !important;
+}
+#main_dash_cont {
+  min-height: 100vh;
+}
+.panel-body.dash {
+  padding: 0;
+  overflow-x: scroll;
+  overflow-y: scroll !important;
+}
+#myList tr, #myList2 tr {
+  display: none;
+}
+.btn.btn-red.btn-sm, .btn.btn-green.btn-sm {
+  font-weight:bold;
+  font-size:12px;
+}
+.panel-heading.dash_heading {
+  padding: 0;
+}
+// Style for Mobile Devices  Tech Dashboard
+@media screen and (max-width: 414px) {
+  .content-box-large.dash_page {
+    padding: 0;
+  }
+
+  .tech_main_cont {
+    padding-left:4px;
+    padding-right:4px !important;
+  }
+  #main_job_info {
+    padding:5px;
+  }
+
+  #events {
+    padding:5px;
+  }
+  #events .left_days {
+    right:10px;
+  }
+
+  .table-overflow table {
+    width: 100%;
+  }
+}
+
+.table-overflow {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 77vh;
+}
+
+
+// Place all the styles related to the floor_plans controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

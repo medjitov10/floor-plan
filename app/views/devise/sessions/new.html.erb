@@ -1,0 +1,59 @@
+<div class='welcome-page'>
+  <div class='get-started pop-up'>
+    <span>Welcome to the Floor Plan Creator Application</span>
+    <div>
+      <button onClick='guest()' class='get-started-button button-pop-up'>Get Started</button>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  setTimeout(() => {
+    const getStarted = document.querySelector('.get-started');
+    getStarted.classList.remove('pop-up');
+    getStarted.classList.add('ready');
+  }, 200)
+  setTimeout(() => {
+    const getStartedButton = document.querySelector('.get-started-button');
+    getStartedButton.classList.remove('button-pop-up');
+    getStartedButton.classList.add('button-ready');
+  }, 1200)
+</script>
+
+<div style='display: none;'>
+  <%= form_for(resource, as: resource_name,html: { id: 'form_id'}, url: session_path(resource_name)) do |f| %>
+    <div class="sign-in-inputs">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, :id => 'login', autofocus: true %>
+    </div>
+
+    <div class="sign-in-inputs">
+      <%= f.label :password %><br />
+      <%= f.password_field :password, :id => 'password', autocomplete: "off" %>
+    </div>
+
+    <% if devise_mapping.rememberable? -%>
+      <div class="sign-in-inputs">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+    <% end -%>
+
+    <div class="sign-in-button">
+      <%= f.submit "Log in" %>
+    </div>
+    <button class="guest" onClick='guest()'>Guest</button>
+    <div class="sign-in-inputs">
+      <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    </div>
+  <% end %>
+</div>
+
+
+<script type="text/javascript">
+  function guest() {
+    document.getElementById('login').value = 'guest@some.com';
+    document.getElementById('password').value = 'qweqwe';
+    document.getElementById("form_id").submit();
+  }
+</script>

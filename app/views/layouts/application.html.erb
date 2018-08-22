@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FloorPlanApp</title>
+    <%= csrf_meta_tags %>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <%= stylesheet_link_tag    'application', media: 'all' %>
+      <%= javascript_include_tag 'application' %>
+      <%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' %>
+      <%= stylesheet_link_tag 'https://cdn.jsdelivr.net/gh/godswearhats/jquery-ui-rotatable@1.1/jquery.ui.rotatable.css' %>
+      <%= javascript_include_tag 'https://cdn.jsdelivr.net/jquery.ui.rotatable/1.0.1/jquery.ui.rotatable.min.js' %>
+      <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+      <!-- Latest compiled and minified CSS -->
+  </head>
+
+  <body>
+    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+
+    <%= yield %>
+  </body>
+</html>

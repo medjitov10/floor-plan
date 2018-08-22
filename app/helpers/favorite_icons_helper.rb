@@ -1,0 +1,2 @@
+module FavoriteIconsHelper
+end
