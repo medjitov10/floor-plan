@@ -15,7 +15,7 @@ class FloorPlansController < ApplicationController
     s3_aws = {
       form_data: @s3_direct_post.fields,
       url: @s3_direct_post.url,
-      host: URI.parse(@s3_direct_post.url).host
+      host: @s3_direct_post.url
     }
     respond_to do |format|
       format.html
