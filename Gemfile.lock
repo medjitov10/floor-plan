@@ -193,6 +193,8 @@ GEM
     tilt (2.0.8)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uglifier (4.1.18)
+      execjs (>= 0.3.0, < 3)
     vegas (0.1.11)
       rack (>= 1.0.0)
     warden (1.2.7)
@@ -225,6 +227,7 @@ DEPENDENCIES
   resque
   sass-rails (~> 5.0)
   tzinfo-data
+  uglifier
   wicked_pdf
   wkhtmltopdf-binary (= 0.12.3)
 
