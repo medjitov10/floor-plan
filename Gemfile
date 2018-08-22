@@ -11,7 +11,6 @@ gem 'rails', '~> 5.1.6'
 # Use sqlite3 as the database for Active Record
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary',  "0.12.3"
-gem 'sqlite3'
 gem 'redis'
 gem 'resque'
 gem 'puma', '~> 3.7'
