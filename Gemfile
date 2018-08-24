@@ -28,6 +28,9 @@ gem 'aws-sdk', '~> 2.3'
 gem 'uglifier'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3'
+  gem 'annotate'
+  gem 'listen', '~> 3.0.5'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 group :poduction do
