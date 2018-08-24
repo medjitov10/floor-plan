@@ -210,7 +210,7 @@ class Customers extends Component {
                 #
               </th>
               <th onClick={ () => { this.onSortClick('name');}}>
-                Name
+                Customer
                 <i style={{float: 'right', marginTop: '2px'}} className="fa fa-sort" aria-hidden="true"></i>
               </th>
               <th onClick={ () => { this.onSortClick('address');}}>

@@ -152,7 +152,7 @@ class FloorPlanFooter extends Component {
             fontSize: '20px',
             float: 'right'
           }}
-          onClick={ () => this.props.history.push('/floor_plans')}
+          onClick={ () => this.props.history.push('/')}
           className="fa fa-times"></i>
         {
           this.state.disabled ?

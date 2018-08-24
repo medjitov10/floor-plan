@@ -120,49 +120,49 @@ class AddFloorPlan extends Component {
 
   awsUpload() {
     $('.directUpload').find("input:file").each((i, elem) => {
-     let fileInput    = $(elem),
-         form         = $(fileInput.parents('form:first')),
-         submitButton = form.find('#submit_btn'),
-         backButton = form.find('#back_btn'),
-         progressBar  = $("\<div class='bar'>\</div>"),
-         barContainer = $("\<div class='div_progress'>\</div>").append(progressBar);
+      let fileInput    = $(elem),
+        form         = $(fileInput.parents('form:first')),
+        submitButton = form.find('#submit_btn'),
+        backButton   = form.find('#back_btn'),
+        progressBar  = $("\<div class='bar'>\</div>"),
+        barContainer = $("\<div class='div_progress'>\</div>").append(progressBar);
 
       fileInput.after(barContainer);
       fileInput.fileupload({
-       url:             this.props.customers.s3_aws.url,
-       type:            'POST',
-       autoUpload:       true,
-       formData:         this.props.customers.s3_aws.form_data,
-       paramName:        'file',
-       dataType:         'XML',
-       replaceFileInput: false,
-       progressall: function (e, data) {
-         let progress = parseInt(data.loaded / data.total * 100, 10);
-         progressBar.css('width', progress + '%').text(`${progress} %`)
-       },
-       start: function (e) {
-         // submitButton.prop('disabled', true);
-         backButton.prop('disabled', true);
+        url:              this.props.customers.s3_aws.url,
+        type:             'POST',
+        autoUpload:       true,
+        formData:         this.props.customers.s3_aws.form_data,
+        paramName:        'file',
+        dataType:         'XML',
+        replaceFileInput: false,
+      progressall: function (e, data) {
+        let progress = parseInt(data.loaded / data.total * 100, 10);
+        progressBar.css('width', progress + '%').text(`${progress} %`)
+      },
+      start: function (e) {
+        // submitButton.prop('disabled', true);
+        backButton.prop('disabled', true);
 
-         progressBar.
-           css({'background':'#29B6F6', 'display':'block', 'width':'0%'});
-       },
-       done: (e, data) => {
-         // submitButton.prop('disabled', false);
-         backButton.prop('disabled', false);
-         progressBar.text("Uploading done");
-         let key   = $(data.jqXHR.responseXML).find("Key").text();
-         let url   = `${data.url}/${key}`;
-         this.setState({
-           plan_url: url
-         }, () => {this.isDisabled();});
-       },
-       fail: function(e, data) {
-         submitButton.prop('disabled', false);
+        progressBar.
+          css({'background':'#29B6F6', 'display':'block', 'width':'0%'});
+      },
+      done: (e, data) => {
+        // submitButton.prop('disabled', false);
+        backButton.prop('disabled', false);
+        progressBar.text("Uploading done");
+        let key   = $(data.jqXHR.responseXML).find("Key").text();
+        let url   = `${data.url}/${key}`;
+        this.setState({
+          plan_url: url
+        }, () => {this.isDisabled();});
+      },
+      fail: function(e, data) {
+        submitButton.prop('disabled', false);
 
-         progressBar.
-           css("background", "red").
-           text("Failed");
+        progressBar.
+          css("background", "red").
+          text("Failed");
        }
      });
    });

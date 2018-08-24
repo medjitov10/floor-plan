@@ -50,7 +50,6 @@ class FloorPlansController < ApplicationController
   # PATCH/PUT /floor_plans/1.json
   def update
     @floor_plan.update(floor_plan_params)
-    @floor_plan.update(updated_by: @user.full_name)
     location = @floor_plan.location
     render json: {floor_plan: @floor_plan}
   end
