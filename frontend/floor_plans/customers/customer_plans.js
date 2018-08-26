@@ -220,7 +220,9 @@ export default class CustomerPlans extends Component {
                     <CustomerPlan
                       clearFloorPlan={this.props.clearFloorPlan}
                       onDeleteClick={this.onDeleteClick.bind(this)}
-                      customer_plan={el} key={index} index={index}
+                      customer_plan={el}
+                      key={el.id}
+                      index={index}
                       onUpdateClick={this.props.onUpdateClick}
                     />
                   );

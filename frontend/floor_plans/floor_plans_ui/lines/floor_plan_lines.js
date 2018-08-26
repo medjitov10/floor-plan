@@ -9,7 +9,6 @@ export default class FloorPlanLines extends PureComponent {
     selected: PropTypes.number.isRequired,
     selectedLine: PropTypes.func.isRequired,
     deleteLine: PropTypes.func.isRequired,
-    onDeleteClick: PropTypes.func.isRequired,
   }
 
   static defaultProps = {
@@ -21,7 +20,6 @@ export default class FloorPlanLines extends PureComponent {
       segments,
       selectedLine,
       selected,
-      onDeleteClick,
       deleteLine,
     } = this.props;
     return (
@@ -29,7 +27,6 @@ export default class FloorPlanLines extends PureComponent {
         {
           segments.map((el, index) => (
             <Line
-              onDeleteClick={onDeleteClick}
               key={el.id}
               selected={selected}
               segment={el}

@@ -14,11 +14,21 @@ export default class Customer extends Component {
           <ReactCSSTransitionGroup
             transitionName="qty"
             component='span'
-            style={{display: 'inline-block', overflow: 'hidden', position: 'relative'}}
+            style={{
+              display: 'inline-block',
+              overflow: 'hidden',
+              position: 'relative'
+            }}
             transitionEnterTimeout={500}
             transitionLeaveTimeout={500}>
-            <span style={{display: 'inline-block'}}
-              key={this.props.customer.id}>{this.props.customer.qty}</span>
+            <span
+              style={{
+                display: 'inline-block'
+              }}
+              key={this.props.customer.id}
+            >
+              {this.props.customer.qty}
+            </span>
           </ReactCSSTransitionGroup>
         </td>
       </tr>

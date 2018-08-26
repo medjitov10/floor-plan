@@ -146,7 +146,6 @@ class Customers extends Component {
                 index={i}
                 onTrClick={this.onTrClick}
               />);
-
       }) : null;
       return (
         !this.state.first ?

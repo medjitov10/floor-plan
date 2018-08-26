@@ -12,7 +12,7 @@ export default class Line extends Component {
   }
 
   state = {
-    lineNote: this.props.segment.note,
+    lineNote: this.props.segment.note || "",
   }
 
   componentDidMount() {
@@ -79,7 +79,7 @@ export default class Line extends Component {
   clearSelectedLine = (e) => {
     const { selectedLine } = this.props;
     e.stopPropagation();
-    selectedLine([]);
+    selectedLine(-1);
   }
 
   selected = () => (this.props.selected === this.props.segment.id);
