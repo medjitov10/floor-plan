@@ -64,7 +64,8 @@ class FloorPlanFooterType extends Component {
               {this.props.element.icon === '' || this.props.element.icon === null ?
               <label style={{
                 textAlign: 'center',
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                height: '0px'
               }}>
                 {this.props.element.type.split(' ').map( el => (el[0].toUpperCase()))}
               </label> :
