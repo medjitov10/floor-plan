@@ -28,7 +28,6 @@ class FloorPlanPdfGetter
     @floor_plan.update(pdf_url: obj.public_url)
 
     File.delete('public/floor_print.pdf')
-    obj.public_url
   end
 
 end
