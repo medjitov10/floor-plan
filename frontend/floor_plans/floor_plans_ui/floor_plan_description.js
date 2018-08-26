@@ -15,7 +15,7 @@ export default class FloorPlanDescription extends Component {
     return (
       <div style={{right: this.props.toggle ? '-92px' : 0, transition: 'right .5s'}} className='floor-plans-ui-right'>
         <div className='floor-plan-description-img' style={{ background: 'white' }}>
-            <img src="/images/logo1.png"
+            <img src="/images/logo1.jpeg"
               alt=""
               width="100%"
               height='50%'
