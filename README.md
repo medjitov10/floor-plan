@@ -585,7 +585,6 @@ const mapStateToProps = state => ({
 
 export default connect(mapStateToProps, { close, updateIcon, deleteIcon })(IconDetail);
 ```
-Floor plan can be save as pdf. To covert plan to pdf I used Wickedpdf. It take time and heroku server filed due to expiration of the request time. So I used Redis.resque to make this asynchronous.
 #### Medhod in controller
 ```ruby
     def generate_pdf
