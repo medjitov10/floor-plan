@@ -1,6 +1,6 @@
 #### Floor Plan Creator
 
-Floor plan creator is a full-stack web application. It makes use of Rails-PostgreSQL on the backend, and React-Redux on the client. Also, this app leverages Amazon AWS file-storage for all floor plan images and floor plan pdf.
+Responsive Multiple page application to implement all digital devices on floor plan. Floor plan creator is a full-stack web application. It makes use of Rails-PostgreSQL on the backend, and React-Redux on the client. Also, this app leverages Amazon AWS file-storage for all floor plan images and floor plan pdf.
 
 ----
 ## Technologies
