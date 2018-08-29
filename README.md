@@ -28,6 +28,8 @@ Floor plan creator is a full-stack web applicatio. It makes use of Rails-Postgre
 <img src="https://s3.amazonaws.com/osman-floor-plan/printsceens/Screen+Shot+2018-08-29+at+10.01.25+AM.png" height="300" width="50%">
 
 By using jquery-ui icon can drag and rotate.
+#### Upload pdf
+Floor plan can be save as pdf. To covert plan to pdf I used Wickedpdf. It take time and heroku server filed due to expiration of the request time. So I used Redis.resque to make this asynchronous.
 #### icon.rb
 ```ruby
 # Table name: icons
