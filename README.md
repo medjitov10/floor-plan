@@ -17,7 +17,7 @@ Responsive Multiple page application to implement all digital devices on floor p
 ## Features
 #### Base
 + User can create, edit adn delete floor plan.
-+ For any floor plan, user able add, edit and update icon and lines.
++ For any floor plan, user able add, edit and update devices and cables.
 #### Advanced
 + User have possibility to change position of icon and line on floor plan.
 + Any icon have special panel to change any detail of the icon and apply specific device for the icon.
